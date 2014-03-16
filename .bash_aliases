@@ -28,6 +28,7 @@ alias gpushom="git push origin master"
 alias gpullom="git pull origin master"
 alias gcm="git commit -m "
 alias glr="git rev-parse --verify HEAD"
+alias gpo="git push origin"
 
 # virtualenv
 alias da="deactivate"
