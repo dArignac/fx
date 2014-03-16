@@ -1,4 +1,4 @@
-alias update-aliases='curl -s https://raw.github.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
+alias update_bash_aliases='curl -s https://raw.github.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
 
 alias ll='ls -alF'
 alias la='ls -A'
