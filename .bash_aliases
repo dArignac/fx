@@ -24,6 +24,7 @@ alias pmmig="pm migrate --all"
 alias gis="git status"
 alias gpushom="git push origin master"
 alias gpullom="git pull origin master"
+alias gcm="git commit -m "
 
 # virtualenv
 alias da="deactivate"
