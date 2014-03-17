@@ -21,6 +21,9 @@ alias pms="pm shell"
 alias pmcs="pm collectstatic --noinput"
 alias pmsdb="pm syncdb --noinput"
 alias pmmig="pm migrate --all"
+alias pmcs="pm collectstatic --noinput"
+alias pmmin="pm minify --all"
+alias pmmig="pm migrate --all"
 
 # git
 alias gis="git status"
@@ -31,8 +34,15 @@ alias glr="git rev-parse --verify HEAD"
 alias gpso="git push origin"
 alias gplo="git pull origin"
 
+# svn
+alias svn_url="svn info | grep URL: | tr -d 'URL: '"
+
 # virtualenv
 alias da="deactivate"
+
+# taskwarrior
+alias tod="task due:tod"
+alias tom="task due:tom"
 
 # services
 alias nginx_on="sudo service nginx start"
