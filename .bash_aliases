@@ -46,8 +46,10 @@ alias tom="task due:tom"
 
 # services
 alias nginx_on="sudo service nginx start"
+alias nginx_re="sudo service nginx restart"
 alias nginx_off="sudo service nginx stop"
 alias mysql_on="sudo service mysql start"
+alias mysql_re="sudo service mysql restart"
 alias mysql_off="sudo service mysql stop"
 
 
