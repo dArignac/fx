@@ -52,4 +52,8 @@ alias mysql_on="sudo service mysql start"
 alias mysql_re="sudo service mysql restart"
 alias mysql_off="sudo service mysql stop"
 
+# openssl
+alias ssl_key="openssl genrsa 4096"
+alias ssl_csr="openssl req -new -sha256 -key"
+
 
