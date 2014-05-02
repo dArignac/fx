@@ -1,5 +1,5 @@
 # update aliases
-alias uba='curl -s https://raw.github.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
+alias uba='curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
 
 # list files
 alias ll='ls -alF'
