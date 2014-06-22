@@ -58,7 +58,7 @@ alias ssl_key="openssl genrsa 4096"
 alias ssl_csr="openssl req -new -sha256 -key"
 
 # android development
-alias adt_start_server="sudo adb start-server"
-alias adt_stop_server="sudo adb kill-server"
-alias adt_list="adb devices -l"
+alias adt_start_server="sudo $ADB_PATH/adb start-server"
+alias adt_stop_server="sudo $ADB_PATH/adb kill-server"
+alias adt_list="$ADB_PATH/adb devices -l"
 
