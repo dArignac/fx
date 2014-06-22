@@ -57,4 +57,8 @@ alias mysql_off="sudo service mysql stop"
 alias ssl_key="openssl genrsa 4096"
 alias ssl_csr="openssl req -new -sha256 -key"
 
+# android development
+alias adt_start_server="sudo adb start-server"
+alias adt_stop_server="sudo adb kill-server"
+alias adt_list="adb devices -l"
 
