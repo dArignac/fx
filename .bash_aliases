@@ -63,3 +63,5 @@ alias adb_start_server="sudo $ADB_PATH/adb start-server"
 alias adb_stop_server="sudo $ADB_PATH/adb kill-server"
 alias adb_list="$ADB_PATH/adb devices -l"
 
+# common paths
+alias cyg_projects="cd /cygdrive/C/Users/alex/projects/"
