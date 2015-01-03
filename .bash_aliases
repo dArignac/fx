@@ -15,6 +15,8 @@ alias pc="pip freeze -l | grep -v 'distribute' | xargs pip uninstall -y"
 
 # python
 alias p="python"
+alias p2="python2"
+alias p3="python3"
 alias pm="python manage.py"
 alias pmr="pm runserver 0.0.0.0:8000"
 alias pms="pm shell"
