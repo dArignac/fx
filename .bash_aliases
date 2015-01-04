@@ -1,8 +1,9 @@
 # update aliases
 alias uba='curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
 
-# paths for further use
+# paths
 PATH_GITHUB=/home/alex/projects/github
+alias to_github="cd ${PATH_GITHUB}"
 
 # list files
 alias ll='ls -alF'
@@ -55,6 +56,9 @@ alias tom="task due:tom"
 alias php_dev_on="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
 alias php_dev_off="sudo service nginx stop && sudo service mysql stop && sudo service php5-fpm stop"
 alias nginx_re="sudo service nginx restart"
+
+# mysql
+alias mysql_create_db="function _mysql_create_db(){ echo "CREATE SCHEMA $1 DEFAULT CHARACTER SET utf8_general_ci;" | mysql -u root -p  };_mysql_create_db"
 
 # openssl
 alias ssl_key="openssl genrsa 4096"
