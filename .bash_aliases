@@ -1,6 +1,9 @@
 # update aliases
 alias uba='curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
 
+# paths for further use
+PATH_GITHUB=/home/alex/projects/github
+
 # list files
 alias ll='ls -alF'
 alias la='ls -A'
@@ -62,5 +65,3 @@ alias adb_start_server="sudo $ADB_PATH/adb start-server"
 alias adb_stop_server="sudo $ADB_PATH/adb kill-server"
 alias adb_list="$ADB_PATH/adb devices -l"
 
-# common paths
-alias cyg_projects="cd /cygdrive/C/Users/alex/projects/"
