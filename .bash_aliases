@@ -58,7 +58,7 @@ alias php_dev_off="sudo service nginx stop && sudo service mysql stop && sudo se
 alias nginx_re="sudo service nginx restart"
 
 # mysql
-alias mysql_create_db="function _mysql_create_db(){ echo 'CREATE SCHEMA $1 DEFAULT CHARACTER SET utf8_general_ci;' | mysql -u root -p  };_mysql_create_db"
+alias mysql_create_db='function _mysql_cdb(){ echo "CREATE SCHEMA $1 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql -u root -p; };_mysql_cdb'
 
 # openssl
 alias ssl_key="openssl genrsa 4096"
