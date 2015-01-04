@@ -49,12 +49,9 @@ alias tod="task due:tod"
 alias tom="task due:tom"
 
 # services
-alias nginx_on="sudo service nginx start"
+alias php_dev_on="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
+alias php_dev_off="sudo service nginx stop && sudo service mysql stop && sudo service php5-fpm stop"
 alias nginx_re="sudo service nginx restart"
-alias nginx_off="sudo service nginx stop"
-alias mysql_on="sudo service mysql start"
-alias mysql_re="sudo service mysql restart"
-alias mysql_off="sudo service mysql stop"
 
 # openssl
 alias ssl_key="openssl genrsa 4096"
