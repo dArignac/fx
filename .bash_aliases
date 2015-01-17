@@ -53,8 +53,10 @@ alias tod="task due:tod"
 alias tom="task due:tom"
 
 # services
-alias php_dev_on="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
-alias php_dev_off="sudo service nginx stop && sudo service mysql stop && sudo service php5-fpm stop"
+alias dev_on_php="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
+alias dev_off_php="sudo service nginx stop && sudo service mysql stop && sudo service php5-fpm stop"
+alias dev_on_python="sudo service postgresql start"
+alias dev_off_python="sudo service postgresql stop"
 alias nginx_re="sudo service nginx restart"
 
 # mysql
