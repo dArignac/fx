@@ -46,6 +46,7 @@ alias gifm="git config core.fileMode false"
 alias svn_url="svn info | grep URL: | tr -d 'URL: '"
 alias ss="svn status"
 alias svc="svn commit -m "
+alias svu="svn up"
 
 # virtualenv
 alias da="deactivate"
