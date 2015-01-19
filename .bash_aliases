@@ -48,6 +48,7 @@ alias ss="svn status"
 alias svc="svn commit -m "
 alias svu="svn up"
 alias svt="svn status"
+alias svi="svn info"
 
 # virtualenv
 alias da="deactivate"
