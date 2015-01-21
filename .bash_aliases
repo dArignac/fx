@@ -57,6 +57,11 @@ alias da="deactivate"
 alias tod="task due:tod"
 alias tom="task due:tom"
 
+# vagrant
+alias vu="vagrant up"
+alias vs="vagrant ssh"
+alias vd="vagrant destroy"
+
 # services
 alias dev_on_php="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
 alias dev_off_php="sudo service nginx stop && sudo service mysql stop && sudo service php5-fpm stop"
