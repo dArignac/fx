@@ -61,6 +61,7 @@ alias tom="task due:tom"
 alias vu="vagrant up"
 alias vs="vagrant ssh"
 alias vd="vagrant destroy"
+alias vr="vagrant reload"
 
 # services
 alias dev_on_php="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
