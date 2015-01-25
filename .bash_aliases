@@ -52,6 +52,7 @@ alias svi="svn info"
 
 # virtualenv
 alias da="deactivate"
+alias ae=". .env/bin/activate"
 
 # taskwarrior
 alias tod="task due:tod"
