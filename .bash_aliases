@@ -15,7 +15,7 @@ alias pf="pip freeze"
 alias pfg="pip freeze | grep -i"
 alias pu="pip uninstall"
 alias pi="pip install"
-alias pc="pip freeze -l | grep -v distribute | xargs pip uninstall -y"
+alias pc="pip freeze -l | grep -v distribute | grep -v git+git | xargs pip uninstall -y"
 
 # python
 alias p="python"
