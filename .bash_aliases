@@ -67,8 +67,8 @@ alias vr="vagrant reload"
 # services
 alias dev_on_php="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
 alias dev_off_php="sudo service nginx stop && sudo service mysql stop && sudo service php5-fpm stop"
-alias dev_on_python="sudo service postgresql start"
-alias dev_off_python="sudo service postgresql stop"
+alias dev_on_python="sudo service postgresql start && sudo service redis-server start"
+alias dev_off_python="sudo service postgresql stop && sudo service redis-server stop"
 alias nginx_re="sudo service nginx restart"
 
 # mysql
