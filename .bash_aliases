@@ -31,6 +31,9 @@ alias pmcs="pm collectstatic --noinput"
 alias pmmin="pm minify --all"
 alias pmmig="pm migrate --all"
 
+# python packages
+alias rvld="restview --long-description --pypi-strict"
+
 # git
 alias gis="git status"
 alias gpushom="git push origin master"
