@@ -46,6 +46,7 @@ alias gb="git branch -a"
 alias gifm="git config core.fileMode false"
 
 # svn
+SVN_EDITOR=vim
 alias svn_url="svn info | grep URL: | tr -d 'URL: '"
 alias ss="svn status"
 alias svc="svn commit -m "
