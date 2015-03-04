@@ -51,6 +51,7 @@ SVN_EDITOR=vim
 alias svn_url="svn info | grep URL: | tr -d 'URL: '"
 alias ss="svn status"
 alias svc="svn commit -m "
+alias svd="svn diff"
 alias svu="svn up"
 alias svt="svn status"
 alias svi="svn info"
