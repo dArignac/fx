@@ -89,3 +89,5 @@ alias adb_start_server="sudo $ADB_PATH/adb start-server"
 alias adb_stop_server="sudo $ADB_PATH/adb kill-server"
 alias adb_list="$ADB_PATH/adb devices -l"
 
+# weird ubuntu 14.10 stuff
+alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates"
