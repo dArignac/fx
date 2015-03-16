@@ -55,6 +55,8 @@ alias svd="svn diff"
 alias svu="svn up"
 alias svt="svn status"
 alias svi="svn info"
+alias svm="svn merge"
+alias svmr="svn merge --reintegrate"
 
 # virtualenv
 alias da="deactivate"
