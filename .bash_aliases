@@ -55,7 +55,7 @@ alias svd="svn diff"
 alias svi="svn info"
 alias svm="svn merge"
 alias svmr="svn merge --reintegrate"
-alias svrm"="svn rm"
+alias svrm="svn rm"
 alias svu="svn up"
 alias svt="svn status"
 
