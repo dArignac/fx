@@ -43,8 +43,10 @@ alias gcm="git commit -m "
 alias glr="git rev-parse --verify HEAD"
 alias gpso="git push origin"
 alias gplo="git pull origin"
+alias gpl="git pull"
 alias gb="git branch -a"
 alias gifm="git config core.fileMode false"
+alias gfo="git fetch origin"
 
 # svn
 SVN_EDITOR=vim
