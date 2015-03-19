@@ -101,3 +101,7 @@ alias adb_list="$ADB_PATH/adb devices -l"
 # see https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-331-updates/+bug/1268257
 # this fixes it:
 alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates"
+
+# project specific
+alias pm_worker="DJANGO_CONFIGURATION=Dev celery -A monitor worker -n 'pricemonitor.zoe.vc' -l DEBUG"
+alias pm_beat="DJANGO_CONFIGURATION=Dev celery -A monitor beat -l DEBUG"
