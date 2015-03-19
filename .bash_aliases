@@ -103,5 +103,5 @@ alias adb_list="$ADB_PATH/adb devices -l"
 alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates"
 
 # project specific
-alias pm_worker="DJANGO_CONFIGURATION=Dev celery -A monitor worker -n 'pricemonitor.zoe.vc' -l DEBUG"
-alias pm_beat="DJANGO_CONFIGURATION=Dev celery -A monitor beat -l DEBUG"
+alias pm_worker="DJANGO_CONFIGURATION=Dev celery -A monitor worker -n 'pricemonitor.zoe.vc' -l INFO"
+alias pm_beat="DJANGO_CONFIGURATION=Dev celery -A monitor beat -l INFO"
