@@ -77,6 +77,7 @@ alias vu="vagrant up"
 alias vs="vagrant ssh"
 alias vd="vagrant destroy"
 alias vr="vagrant reload"
+alias vst="vagrant status"
 
 # services
 alias donph="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
