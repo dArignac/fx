@@ -3,7 +3,7 @@ alias uba='curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_al
 
 # paths
 PATH_GITHUB=/home/alex/projects/github
-alias to_github="cd ${PATH_GITHUB}"
+alias to_gh="cd ${PATH_GITHUB}"
 
 # list files
 alias ll='ls -alF'
