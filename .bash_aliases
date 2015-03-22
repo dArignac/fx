@@ -94,6 +94,7 @@ alias ssl_key="openssl genrsa 4096"
 alias ssl_csr="openssl req -new -sha256 -key"
 
 # android development
+PATH_ADB="/home/alex/Android/Sdk/platform-tools"
 alias adb_start_server="sudo $ADB_PATH/adb start-server"
 alias adb_stop_server="sudo $ADB_PATH/adb kill-server"
 alias adb_list="$ADB_PATH/adb devices -l"
