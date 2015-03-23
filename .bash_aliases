@@ -91,6 +91,7 @@ alias mysql_create_db='function _mysql_cdb(){ echo "CREATE SCHEMA $1 DEFAULT CHA
 
 # openssl
 alias ssl_key="openssl genrsa 4096"
+alias ssl_key_rand="openssl dhparam -rand - 2048 >> "
 alias ssl_csr="openssl req -new -sha256 -key"
 
 # android development
