@@ -104,7 +104,7 @@ alias adb_list="$PATH_ADB/adb devices -l"
 # nvidia driver fails after installing new kernel
 # see https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-331-updates/+bug/1268257
 # this fixes it:
-alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates"
+alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates && sudo dpkg-reconfigure nvidia-331-updates-uvm"
 
 # project specific
 alias pm_worker="DJANGO_CONFIGURATION=Dev celery -A monitor worker -n 'pricemonitor.zoe.vc' -l INFO"
