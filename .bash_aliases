@@ -109,3 +109,6 @@ alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates && sudo dpkg-reco
 # project specific
 alias pm_worker="DJANGO_CONFIGURATION=Dev celery -A monitor worker -n 'pricemonitor.zoe.vc' -l INFO"
 alias pm_beat="DJANGO_CONFIGURATION=Dev celery -A monitor beat -l INFO"
+
+# other stuff
+alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/' ./*"
