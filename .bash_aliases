@@ -111,4 +111,4 @@ alias pm_worker="DJANGO_CONFIGURATION=Dev celery -A monitor worker -n 'pricemoni
 alias pm_beat="DJANGO_CONFIGURATION=Dev celery -A monitor beat -l INFO"
 
 # other stuff
-alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/' ./*"
+alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
