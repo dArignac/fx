@@ -4,6 +4,7 @@ alias uba='curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_al
 # paths
 PATH_GITHUB=/home/alex/projects/github
 alias to_gh="cd ${PATH_GITHUB}"
+export PATH=$PATH:/home/alex/.composer/vendor/bin/
 
 # list files
 alias ll='ls -alF'
