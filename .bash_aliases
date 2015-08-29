@@ -69,10 +69,6 @@ alias svt="svn status"
 alias da="deactivate"
 alias ae=". .env/bin/activate"
 
-# taskwarrior
-alias tod="task due:tod"
-alias tom="task due:tom"
-
 # vagrant
 alias vu="vagrant up"
 alias vs="vagrant ssh"
@@ -108,9 +104,6 @@ alias adb_list="$PATH_ADB/adb devices -l"
 # this fixes it:
 alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates && sudo dpkg-reconfigure nvidia-331-updates-uvm"
 
-# project specific
-alias pm_worker="DJANGO_CONFIGURATION=Dev celery -A monitor worker -n 'pricemonitor.zoe.vc' -l INFO"
-alias pm_beat="DJANGO_CONFIGURATION=Dev celery -A monitor beat -l INFO"
-
 # other stuff
+alias copy_dvd_regionfree="vobcopy -v -m -F 16 /media/cdrom1"
 alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
