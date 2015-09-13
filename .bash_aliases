@@ -12,7 +12,8 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # docker
-alias docker_rm_exited="docker ps -a --no-trunc | grep 'Exit' | awk '{print $1}' | xargs -r docker rm"
+alias docker_clean_containers="docker ps -a --no-trunc | grep 'Exit' | awk '{print $1}' | xargs -r docker rm"
+alias docker_clean_images="docker images --no-trunc | grep none | awk '{print $3}' | xargs -r docker rmi"
 
 # pip
 alias pf="pip freeze"
