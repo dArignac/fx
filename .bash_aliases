@@ -11,6 +11,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# docker
+alias docker_rm_exited="docker ps -a --no-trunc | grep 'Exit' | awk '{print $1}' | xargs -r docker rm"
+
 # pip
 alias pf="pip freeze"
 alias pfg="pip freeze | grep -i"
