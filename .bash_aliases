@@ -91,10 +91,11 @@ alias nginx_re="sudo service nginx restart"
 alias mysql_create_db='function _mysql_cdb(){ echo "CREATE SCHEMA $1 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql -u root -p; };_mysql_cdb'
 
 # openssl
-alias ssl_key="openssl genrsa 4096"
 alias ssh_key="ssh-keygen -t rsa -b 8192"
+alias ssl_key="openssl genrsa 4096"
 alias ssl_key_rand="openssl dhparam -rand - 2048 >> "
 alias ssl_csr="openssl req -new -sha256 -key"
+alias ssl_cert="openssl x509 -sha256 -req -days 3000 -in domain.csr -signkey key.pem -out"
 
 # android development
 PATH_ADB="/home/alex/Android/Sdk/platform-tools"
