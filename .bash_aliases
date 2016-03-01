@@ -112,3 +112,4 @@ alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates && sudo dpkg-reco
 # other stuff
 alias copy_dvd_regionfree="vobcopy -v -m -F 16 /media/cdrom1"
 alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
+alias clam_scan="sudo clamscan / -ir --exclude-dir=^/sys --exclude-dir=^/dev --exclude-dir=^/proc --detect-pua=yes --scan-mail=yes --log=$HOME/clamscan.log"
