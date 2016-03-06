@@ -14,6 +14,9 @@ alias l='ls -CF'
 # docker
 alias docker_clean_containers="docker ps -a --no-trunc | grep 'Exit' | awk '{print \$1}' | xargs -r docker rm"
 alias docker_clean_images="docker images --no-trunc | grep none | awk '{print \$3}' | xargs -r docker rmi"
+alias di="docker images"
+alias dps="docker ps -a"
+alias dcp="docker-compose"
 
 # pip
 alias pf="pip freeze"
