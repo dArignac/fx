@@ -107,6 +107,9 @@ alias adb_start_server="sudo $PATH_ADB/adb start-server"
 alias adb_stop_server="sudo $PATH_ADB/adb kill-server"
 alias adb_list="$PATH_ADB/adb devices -l"
 
+# Wordpress
+alias wp_i18n_theme="php $HOME/projects/wordpress-core/tools/i18n/makepot.php wp-theme"
+
 # other stuff
 alias copy_dvd_regionfree="vobcopy -m "
 alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
