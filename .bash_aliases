@@ -107,12 +107,6 @@ alias adb_start_server="sudo $PATH_ADB/adb start-server"
 alias adb_stop_server="sudo $PATH_ADB/adb kill-server"
 alias adb_list="$PATH_ADB/adb devices -l"
 
-# weird ubuntu 14.10 stuff
-# nvidia driver fails after installing new kernel
-# see https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-331-updates/+bug/1268257
-# this fixes it:
-alias nvidia_rebuild="sudo dpkg-reconfigure nvidia-331-updates && sudo dpkg-reconfigure nvidia-331-updates-uvm"
-
 # other stuff
 alias copy_dvd_regionfree="vobcopy -m "
 alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
