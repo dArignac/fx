@@ -2,9 +2,9 @@
 alias uba='curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
 
 # paths
-PATH_GITHUB=/home/alex/projects/github
+PATH_GITHUB=$HOME/projects/github
 alias to_gh="cd ${PATH_GITHUB}"
-export PATH=$PATH:/home/alex/.composer/vendor/bin/
+export PATH=$PATH:$HOME/.composer/vendor/bin/
 
 # list files
 alias ll='ls -alF'
@@ -102,7 +102,7 @@ alias ssl_csr="openssl req -new -sha256 -key"
 alias ssl_cert="openssl x509 -sha256 -req -days 3000 -in domain.csr -signkey key.pem -out"
 
 # android development
-PATH_ADB="/home/alex/Android/Sdk/platform-tools"
+PATH_ADB="$HOME/Android/Sdk/platform-tools"
 alias adb_start_server="sudo $PATH_ADB/adb start-server"
 alias adb_stop_server="sudo $PATH_ADB/adb kill-server"
 alias adb_list="$PATH_ADB/adb devices -l"
