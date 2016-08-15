@@ -81,7 +81,7 @@ alias ae=". .env/bin/activate"
 #alias vu="vagrant up"
 function vu() {
     vagrant up $1
-    vagrant ssh -c "curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases >> ~/.bashrc" $1
+    vagrant ssh -c "curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases >> ~/.bash_aliases" $1
 }
 alias vs="vagrant ssh"
 alias vd="vagrant destroy"
