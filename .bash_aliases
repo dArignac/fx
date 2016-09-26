@@ -52,6 +52,7 @@ alias gcms="git commit -S -m"
 alias glr="git rev-parse --verify HEAD"
 alias gpso="git push origin"
 alias gplo="git pull origin"
+alias gpt="git push origin --tags"
 # does not work as evaluated on run time
 #alias gpsoc="git push origin $(git rev-parse --abbrev-ref HEAD)"
 #alias gploc="git pull origin $(git rev-parse --abbrev-ref HEAD)"
