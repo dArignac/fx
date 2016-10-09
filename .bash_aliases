@@ -120,3 +120,5 @@ alias wp_i18n_theme="php $HOME/projects/wordpress-core/tools/i18n/makepot.php wp
 alias copy_dvd_regionfree="vobcopy -m "
 alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
 alias clam_scan="clamscan / -ir --exclude-dir=^/sys --exclude-dir=^/dev --exclude-dir=^/proc --detect-pua=yes --scan-mail=yes --log=$HOME/clamscan.log"
+alias flac_replaygain="metaflac --add-replay-gain *.flac"
+alias flac_cover_art="metaflac --import-picture-from="
