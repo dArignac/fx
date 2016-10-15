@@ -13,6 +13,7 @@ alias l='ls -CF'
 
 # docker
 alias dcc="docker ps -a --no-trunc | grep 'Exit' | awk '{print \$1}' | xargs -r docker rm"
+alias dccc="docker ps -a --no-trunc | grep 'Created' | awk '{print \$1}' | xargs -r docker rm"
 alias dci="docker images --no-trunc | grep none | awk '{print \$3}' | xargs -r docker rmi"
 alias di="docker images"
 alias dps="docker ps -a"
