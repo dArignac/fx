@@ -62,6 +62,12 @@ alias gb="git branch -a"
 alias gifm="git config core.fileMode false"
 alias gfo="git fetch origin"
 alias git_initial="touch .gitignore && git add .gitignore && git commit -m 'initial commit' && git branch -m master development && git push origin development"
+function git_to_development() {
+    git checkout development
+    git pull origin development
+    git remote prune origin
+    git branch -d $1
+}
 
 # svn
 SVN_EDITOR=vim
