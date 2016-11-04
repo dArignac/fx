@@ -71,6 +71,11 @@ function git2dev() {
     git branch -d $1
 }
 
+function gsw() {
+    git checkout $1
+    git pull origin $1
+}
+
 # svn
 SVN_EDITOR=vim
 alias svn_url="svn info | grep URL: | tr -d 'URL: '"
