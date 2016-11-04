@@ -54,6 +54,8 @@ alias glr="git rev-parse --verify HEAD"
 alias gpso="git push origin"
 alias gplo="git pull origin"
 alias gpt="git push origin --tags"
+alias gpd="git pull origin development"
+alias gpsd="git push origin development"
 # does not work as evaluated on run time
 #alias gpsoc="git push origin $(git rev-parse --abbrev-ref HEAD)"
 #alias gploc="git pull origin $(git rev-parse --abbrev-ref HEAD)"
@@ -62,7 +64,7 @@ alias gb="git branch -a"
 alias gifm="git config core.fileMode false"
 alias gfo="git fetch origin"
 alias git_initial="touch .gitignore && git add .gitignore && git commit -m 'initial commit' && git branch -m master development && git push origin development"
-function git_to_development() {
+function git2dev() {
     git checkout development
     git pull origin development
     git remote prune origin
