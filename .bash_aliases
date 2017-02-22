@@ -73,10 +73,12 @@ function g2d() {
     git remote prune origin
     git branch -d $1
 }
-
 function gsw() {
     git checkout $1
     git pull origin $1
+}
+function git_retag() {
+    git tag -d $1 && git push origin --delete $1 && git tag $1 && git push origin --tags
 }
 
 # svn
