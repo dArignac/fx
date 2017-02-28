@@ -80,6 +80,9 @@ function gsw() {
 function git_retag() {
     git tag -d $1 && git push origin --delete $1 && git tag $1 && git push origin --tags
 }
+function git_remove_all_tags() {
+    git tag | xargs git push origin --delete && git tag | xargs git tag -d
+}
 
 # svn
 SVN_EDITOR=vim
