@@ -102,19 +102,6 @@ function git_remove_all_tags
     git tag | xargs git tag -d
 end
 
-# svn
-#SVN_EDITOR=vim
-#alias svn_url="svn info | grep URL: | tr -d 'URL: '"
-#alias ss="svn status"
-#alias svc="svn commit -m "
-#alias svd="svn diff"
-#alias svi="svn info"
-#alias svm="svn merge"
-#alias svmr="svn merge --reintegrate"
-#alias svrm="svn rm"
-#alias svu="svn up"
-#alias svt="svn status"
-
 # virtualenv
 alias da="deactivate"
 alias ae=". .env/bin/activate"
