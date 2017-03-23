@@ -1,4 +1,4 @@
 fx
 ==
 
-My bash_aliases.
+my shell config files
