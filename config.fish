@@ -4,6 +4,11 @@ function ufa
     source ~/.config/fish/config.fish
 end
 
+# load private fish stuff if existent
+if test -e ~/.config/fish/private.fish
+    source ~/.config/fish/private.fish
+end
+
 # paths
 #set -x PATH $PATH $HOME/.composer/vendor/bin/
 set -x PATH_GITHUB $HOME/projects/github
