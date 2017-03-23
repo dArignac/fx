@@ -162,6 +162,11 @@ function mysql_create_db
     echo "CREATE SCHEMA $argv DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql -u root -p
 end
 
+# htpasswd
+function create_wd
+	htpasswd -b -c $argv[1] $argv[2] $argv[3]
+end
+
 # openssl
 alias ssh_key="ssh-keygen -t rsa -b 8192"
 alias ssl_key="openssl genrsa 4096"
