@@ -5,7 +5,7 @@ function ufa
 end
 
 # paths
-set -x PATH $PATH $HOME/.composer/vendor/bin/
+#set -x PATH $PATH $HOME/.composer/vendor/bin/
 set -x PATH_GITHUB $HOME/projects/github
 alias to_gh="cd $PATH_GITHUB"
 
