@@ -105,6 +105,7 @@ end
 # virtualenv
 alias da="deactivate"
 alias ae="source .env/bin/activate"
+alias fae="source .env/bin/activate.fish"
 
 # vagrant
 #alias vu="vagrant up"
