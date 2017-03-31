@@ -91,6 +91,10 @@ function gsw
     git checkout $argv
     git pull origin $argv
 end
+function git_remove_tag
+    git tag -d $argv	
+    git push origin --delete $argv
+end
 function git_retag
     git tag -d $argv
     git push origin --delete $argv
