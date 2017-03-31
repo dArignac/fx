@@ -77,6 +77,9 @@ function gsw() {
     git checkout $1
     git pull origin $1
 }
+function git_remove_tag() {
+    git tag -d $1 && git push origin --delete $1
+}
 function git_retag() {
     git tag -d $1 && git push origin --delete $1 && git tag $1 && git push origin --tags
 }
