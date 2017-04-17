@@ -178,7 +178,7 @@ alias wp_i18n_theme="php $HOME/projects/wordpress-core/tools/i18n/makepot.php wp
 # KeePass
 function keepass_add_templates
     curl -s https://raw.githubusercontent.com/darignac/fx/master/keepass.xml > /tmp/keepass.tmp.xml
-    sed -i '/<\/UserProfiles>/e cat /tmp/keepass.tmpxml' ~/.config/KeePass/KeePass.config.xml
+    sed -i '/<\/UserProfiles>/e cat /tmp/keepass.tmp.xml' ~/.config/KeePass/KeePass.config.xml
     rm /tmp/keepass.tmp.xml
 end
 
