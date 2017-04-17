@@ -175,6 +175,13 @@ alias adb_list="$PATH_ADB/adb devices -l"
 # Wordpress
 alias wp_i18n_theme="php $HOME/projects/wordpress-core/tools/i18n/makepot.php wp-theme"
 
+# KeePass
+function keepass_add_templates
+    curl -s https://raw.githubusercontent.com/darignac/fx/master/keepass.xml > /tmp/keepass.tmp.xml
+    sed -i '/<\/UserProfiles>/e cat /tmp/keepass.tmpxml' ~/.config/KeePass/KeePass.config.xml
+    rm /tmp/keepass.tmp.xml
+end
+
 # other stuff
 alias copy_dvd_regionfree="vobcopy -v -m -F 16 /media/cdrom1"
 alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
