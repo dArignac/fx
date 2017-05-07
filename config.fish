@@ -81,6 +81,22 @@ function git_initial
     git branch -m master development
     git push origin development
 end
+function g2b --argument-names "target"
+    if test -n "$target"
+        set -lx source (git symbolic-ref --short -q HEAD)
+        if [ "$target" = "$source" ]
+            echo "Cannot switch and remove the same branch! Skipping..."
+        else
+            echo "switching to branch $target and removing branch $source"
+            git checkout $target
+            git pull origin $target
+            git remote prune origin
+            git branch -d $source
+        end
+    else
+        echo "Provide the target branch to use as first and only argument!"
+    end
+end
 function g2d
     git checkout development
     git pull origin development
