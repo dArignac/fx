@@ -127,6 +127,17 @@ alias da="deactivate"
 alias ae="source .env/bin/activate"
 alias fae="source .env/bin/activate.fish"
 
+# VirtualBox
+function virtualbox_update_extension_pack
+    set -lx version (vboxmanage -v)
+    set -lx version_main (echo $version | cut -d 'r' -f 1)
+    set -lx version_hash (echo $version | cut -d 'r' -f 2)
+    set -lx filename "Oracle_VM_VirtualBox_Extension_Pack-$version_main-$version_hash.vbox-extpack"
+    echo "Updating VirtualBox extension pack with $filename"
+    wget http://download.virtualbox.org/virtualbox/$version_main/$filename -O /tmp/$filename
+    sudo VBoxManage extpack install /tmp/$filename --replace
+end
+
 # vagrant
 #alias vu="vagrant up"
 function vu
