@@ -192,6 +192,9 @@ alias ssl_key="openssl genrsa 4096"
 alias ssl_key_rand="openssl dhparam -rand - 2048 >> "
 alias ssl_csr="openssl req -new -sha256 -key"
 alias ssl_cert="openssl x509 -sha256 -req -days 3000 -in domain.csr -signkey key.pem -out"
+function ssl_check_certificate
+    echo | openssl s_client -servername $argv -connect $argv:443 2>/dev/null | openssl x509 -noout -dates
+end
 
 # android development
 set -x PATH_ADB "$HOME/Android/Sdk/platform-tools"
