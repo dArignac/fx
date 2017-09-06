@@ -10,7 +10,7 @@ if test -e ~/.config/fish/private.fish
 end
 
 # paths
-#set -x PATH $PATH $HOME/.composer/vendor/bin/
+set -x PATH $PATH $HOME/nodejs/bin/
 set -x PATH_GITHUB $HOME/projects/github
 alias to_gh="cd $PATH_GITHUB"
 
