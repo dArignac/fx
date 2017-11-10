@@ -59,6 +59,7 @@ alias gplo="git pull origin"
 alias gpt="git push origin --tags"
 alias gpd="git pull origin development"
 alias gpsd="git push origin development"
+alias gmd="git merge development"
 # does not work as evaluated on run time
 #alias gpsoc="git push origin $(git rev-parse --abbrev-ref HEAD)"
 #alias gploc="git pull origin $(git rev-parse --abbrev-ref HEAD)"
