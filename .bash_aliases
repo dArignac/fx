@@ -108,6 +108,9 @@ alias svt="svn status"
 alias da="deactivate"
 alias ae=". .env/bin/activate"
 
+# ruby
+alias ruby_active="source /home/alex/.rvm/scripts/rvm"
+
 # vagrant
 #alias vu="vagrant up"
 function vu() {
