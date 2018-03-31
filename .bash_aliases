@@ -47,6 +47,9 @@ alias pmmig="pm migrate --all"
 # python packages
 alias rvld="restview --long-description --pypi-strict"
 
+# postgres admin
+alias pgadmin="docker run -p 80:80 -e \"PGADMIN_DEFAULT_EMAIL=darignac@gmail.com\" -e \"PGADMIN_DEFAULT_PASSWORD=password\" -d dpage/pgadmin4"
+
 # git
 alias gis="git status"
 alias gpushom="git push origin master"
