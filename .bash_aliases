@@ -170,3 +170,4 @@ function remove_trailing_whitespace() {
 }
 alias unseal="docker run -v $(pwd):/app  vault unseal"
 alias seal="docker run -v $(pwd):/app  vault seal"
+alias swag="cd $SWAGGER_EDITOR_PATH && http-server -s -p 9999"
