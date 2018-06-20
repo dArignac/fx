@@ -168,6 +168,10 @@ alias flac_cover_art="metaflac --import-picture-from"
 function remove_trailing_whitespace() {
     echo -n `cat $1` > $1
 }
-alias unseal="docker run -v $(pwd):/app  vault unseal"
-alias seal="docker run -v $(pwd):/app  vault seal"
+function unseal() {
+    docker run -v $(pwd):/app  vault unseal
+}
+function seal() {
+    docker run -v $(pwd):/app  vault seal
+}
 alias swag="cd $SWAGGER_EDITOR_PATH && http-server -s -p 9999"
