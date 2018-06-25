@@ -169,9 +169,9 @@ function remove_trailing_whitespace() {
     echo -n `cat $1` > $1
 }
 function unseal() {
-    docker run -v $(pwd):/app  vault unseal
+    docker run -v $(pwd):/app  vault unseal $1
 }
 function seal() {
-    docker run -v $(pwd):/app  vault seal
+    docker run -v $(pwd):/app  vault seal $1
 }
 alias swag="cd $SWAGGER_EDITOR_PATH && http-server -s -p 9999"
