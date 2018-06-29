@@ -174,4 +174,4 @@ function unseal() {
 function seal() {
     docker run --rm -v $(pwd):/app  vault seal $1
 }
-alias swag="cd $SWAGGER_EDITOR_PATH && http-server -s -p 9999"
+alias swag="cd $(SWAGGER_EDITOR_PATH) && http-server -s -p 9999"
