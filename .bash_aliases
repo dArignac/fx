@@ -21,6 +21,7 @@ function dci_grep() {
 alias di="docker images"
 alias dps="docker ps -a"
 alias dcp="docker-compose"
+alias dcp2="dcp && dcc && dcp up -d && dcp logs -f"
 
 # pip
 alias pf="pip freeze"
