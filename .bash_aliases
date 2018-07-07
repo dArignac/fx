@@ -22,7 +22,16 @@ alias di="docker images"
 alias dps="docker ps -a"
 alias dcp="docker-compose"
 function dcp2() {
-    dcp && dcc && dcp up -d && dcp logs -f
+    dcp stop && dcc
+}
+function dcp3() {
+    dcp up -d && dcp logs -f
+}
+function dcp4() {
+    dcp stop && dcc && dcp up -d && dcp logs -f
+}
+function dcp5() {
+    dcp stop && dcc && dcp build && dcp up -d && dcp logs -f
 }
 
 # pip
