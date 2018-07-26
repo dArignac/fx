@@ -86,7 +86,7 @@ alias gfo="git fetch origin"
 alias git_remove_executable="git update-index --chmod=-x "
 alias git_add_executable="git update-index --chmod=+x "
 alias git_fix_local_file_mode_on_windows="git config --local core.filemode false"
-alias git_initial="touch .gitignore && git add .gitignore && git commit -m 'initial commit' && git branch -m master development && git push origin development"
+alias git_initial="touch .gitignore && git add .gitignore && git commit -m 'initial commit' && git push origin master && git branch -m master development && git push origin development"
 function g2d() {
     git checkout development
     git pull origin development
