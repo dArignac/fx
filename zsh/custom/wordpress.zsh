@@ -1,0 +1,1 @@
+alias wp_i18n_theme="php $HOME/projects/wordpress-core/tools/i18n/makepot.php wp-theme"
