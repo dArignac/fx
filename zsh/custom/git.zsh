@@ -17,19 +17,16 @@ alias gfo="git fetch origin"
 alias git_remove_executable="git update-index --chmod=-x "
 alias git_add_executable="git update-index --chmod=+x "
 alias git_fix_local_file_mode_on_windows="git config --local core.filemode false"
-
 function g2d() {
     git checkout develop
     git pull origin develop
     git remote prune origin
     git branch -d $1
 }
-
 function gsw() {
     git checkout $1
     git pull origin $1
 }
-
 function git_remove_tag() {
     git tag -d $1 && git push origin --delete $1
 }
