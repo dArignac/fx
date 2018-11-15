@@ -5,7 +5,7 @@ export EDITOR='vim'
 
 COMPLETION_WAITING_DOTS="true"
 #export LANG=en_US.UTF-8
-export LANG="de_DE.UTF-8"
+#export LANG="de_DE.UTF-8"
 
 zstyle ':completion:*' special-dirs true
 
