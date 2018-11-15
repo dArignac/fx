@@ -16,3 +16,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# run post init script if available
+[ -e $HOME/.zshrc-post.sh ] && source $HOME/.zshrc-post.sh
