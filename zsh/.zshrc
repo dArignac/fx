@@ -4,7 +4,8 @@ export ZSH_CUSTOM=$HOME/.fx/zsh/custom
 export EDITOR='vim'
 
 COMPLETION_WAITING_DOTS="true"
-#export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL="en_US.UTF-8"
 #export LANG="de_DE.UTF-8"
 
 zstyle ':completion:*' special-dirs true
