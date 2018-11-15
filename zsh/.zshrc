@@ -12,6 +12,7 @@ zstyle ':completion:*' special-dirs true
 plugins=(
   git
   vagrant
+  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
