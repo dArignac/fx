@@ -1,6 +1,7 @@
 alias dcc="docker ps -a --no-trunc | grep 'Exit' | awk '{print \$1}' | xargs -r docker rm"
 alias dccc="docker ps -a --no-trunc | grep 'Created' | awk '{print \$1}' | xargs -r docker rm"
 alias dci="docker images --no-trunc | grep none | awk '{print \$3}' | xargs -r docker rmi"
+alias dsc="docker ps -a --no-trunc | grep -v CONTAINER | awk '{print \$1}' | xargs -r docker stop"
 alias di="docker images"
 alias dps="docker ps -a"
 alias dcp="docker-compose"
