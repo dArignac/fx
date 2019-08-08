@@ -10,5 +10,7 @@ PATH_ZSH=$PATH_ZSH:$HOME/ffmpeg-4.0-64bit-static
 PATH_ZSH=$PATH_ZSH:$HOME/sonar-scanner/bin
 # yarn
 PATH_ZSH=$PATH_ZSH:$HOME/.yarn/bin
+# python
+PATH_ZSH=$PATH_ZSH:$HOME/.local/bin
 # set the PATH variable
 export PATH=$PATH:$PATH_ZSH
