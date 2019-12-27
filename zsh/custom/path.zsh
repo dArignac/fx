@@ -14,5 +14,7 @@ PATH_ZSH=$PATH_ZSH:$HOME/.yarn/bin
 PATH_ZSH=$PATH_ZSH:/usr/local/go/bin
 # python
 PATH_ZSH=$PATH_ZSH:$HOME/.local/bin
+# flutter
+PATH_ZSH=$PATH_ZSH:$HOME/projects/github/flutter/bin
 # set the PATH variable
 export PATH=$PATH:$PATH_ZSH
