@@ -12,6 +12,7 @@ PATH_ZSH=$PATH_ZSH:$HOME/sonar-scanner/bin
 PATH_ZSH=$PATH_ZSH:$HOME/.yarn/bin
 # go
 PATH_ZSH=$PATH_ZSH:/usr/local/go/bin
+PATH_ZSH=$PATH_ZSH:$HOME/go/bin
 # python
 PATH_ZSH=$PATH_ZSH:$HOME/.local/bin
 # flutter
