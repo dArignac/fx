@@ -67,6 +67,13 @@
 				<CharSetAdditional>äüöÄÜÖß</CharSetAdditional>
 			</Profile>
 			<Profile>
+				<Name>DKB Password</Name>
+				<GeneratorType>CharSet</GeneratorType>
+				<Length>38</Length>
+				<CharSetRanges>ULD__m____</CharSetRanges>
+				<CharSetAdditional>äüöÄÜÖß!$%&amp;/()=?+#,.:</CharSetAdditional>
+			</Profile>
+			<Profile>
 				<Name>Email 64</Name>
 				<GeneratorType>CharSet</GeneratorType>
 				<Length>64</Length>
@@ -105,4 +112,11 @@
 				<Length>12</Length>
 				<CharSetRanges>ULD__mu___</CharSetRanges>
 				<CharSetAdditional>=*%$#@!</CharSetAdditional>
+			</Profile>
+			<Profile>
+				<Name>Vodafone</Name>
+				<GeneratorType>CharSet</GeneratorType>
+				<Length>64</Length>
+				<CharSetRanges>ULD__mu___</CharSetRanges>
+				<CharSetAdditional>+&amp;@,.</CharSetAdditional>
 			</Profile>
