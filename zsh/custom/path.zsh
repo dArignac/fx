@@ -17,5 +17,7 @@ PATH_ZSH=$PATH_ZSH:$HOME/go/bin
 PATH_ZSH=$PATH_ZSH:$HOME/.local/bin
 # flutter
 PATH_ZSH=$PATH_ZSH:$HOME/projects/github/flutter/bin
+# doctoolchain
+PATH_ZSH=$PATH_ZSH:$HOME/projects/github/docToolchain/bin
 # set the PATH variable
 export PATH=$PATH:$PATH_ZSH
