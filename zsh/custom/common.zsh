@@ -9,3 +9,5 @@ alias flac_cover_art="metaflac --import-picture-from"
 function remove_trailing_whitespace() {
     echo -n `cat $1` > $1
 }
+alias mest="make build lint test"
+alias mun="make build lint test run"
