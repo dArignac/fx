@@ -1,11 +1,6 @@
 # update aliases
 alias uba='curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases > ~/.bash_aliases && source ~/.bash_aliases'
 
-# paths
-PATH_GITHUB=$HOME/projects/github
-alias to_gh="cd ${PATH_GITHUB}"
-export PATH=$PATH:$HOME/.composer/vendor/bin/
-
 # list files
 alias ll='ls -alF'
 alias la='ls -A'
@@ -34,35 +29,6 @@ function dcp5() {
     dcp stop && dcc && dcp build && dcp up -d && dcp logs -f
 }
 
-# pip
-alias pf="pip freeze"
-alias pfg="pip freeze | grep -i"
-alias pu="pip uninstall"
-alias pi="pip install"
-#alias pc="pip freeze -l | grep -v distribute | grep -v git+git | xargs pip uninstall -y"
-alias pc="pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 -P10 pip uninstall -y"
-
-# python
-alias p="python"
-alias p2="python2"
-alias p3="python3"
-alias pm="python manage.py"
-alias pmr="pm runserver 0.0.0.0:8000"
-alias pms="pm shell"
-alias pmcs="pm collectstatic --noinput"
-alias pmsdb="pm syncdb --noinput"
-alias pmmig="pm migrate --all"
-alias pmcs="pm collectstatic --noinput"
-alias pmmin="pm minify --all"
-alias pmmig="pm migrate --all"
-
-# python packages
-alias rvld="restview --long-description --pypi-strict"
-
-# postgres admin
-alias pgadmin_up="docker run -p 80:5050 -v $HOME/pgadmin4:/var/lib/pgadmin --rm --name pgadmin4 -d fenglc/pgadmin4 && echo 'login with pgadmin4@pgadmin.org:admin'"
-alias pgadmin_down="docker stop pgadmin4"
-
 # git
 alias gis="git status"
 alias gpushom="git push origin master"
@@ -76,9 +42,6 @@ alias gpt="git push origin --tags"
 alias gpd="git pull origin development"
 alias gpsd="git push origin development"
 alias gmd="git merge development"
-# does not work as evaluated on run time
-#alias gpsoc="git push origin $(git rev-parse --abbrev-ref HEAD)"
-#alias gploc="git pull origin $(git rev-parse --abbrev-ref HEAD)"
 alias gpl="git pull"
 alias gb="git branch -a"
 alias gifm="git config core.fileMode false"
@@ -106,53 +69,10 @@ function git_retag() {
 function git_remove_all_tags() {
     git tag | xargs git push origin --delete && git tag | xargs git tag -d
 }
-
-# svn
-SVN_EDITOR=vim
-alias svn_url="svn info | grep URL: | tr -d 'URL: '"
-alias ss="svn status"
-alias svc="svn commit -m "
-alias svd="svn diff"
-alias svi="svn info"
-alias svm="svn merge"
-alias svmr="svn merge --reintegrate"
-alias svrm="svn rm"
-alias svu="svn up"
-alias svt="svn status"
-
-# virtualenv
-alias da="deactivate"
-alias ae=". .env/bin/activate"
-
-# ruby
-alias ruby_active="source /home/alex/.rvm/scripts/rvm"
-
-# vagrant
-#alias vu="vagrant up"
-function vu() {
-    vagrant up $1
-    vagrant ssh -c "curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases >> /home/vagrant/.bash_aliases" $1
+function git_cache_credentials() {
+    git config --global credential.helper cache
+    git config --global credential.helper 'cache --timeout=14400'
 }
-function vu2() {
-    vagrant up $1
-    vagrant ssh -c "curl -s https://raw.githubusercontent.com/darignac/fx/master/.bash_aliases >> /home/vagrant/.bash_aliases" $1
-    vagrant ssh -c "echo 'source .bash_aliases' >> /home/vagrant/.bashrc" $1
-}
-alias vs="vagrant ssh"
-alias vd="vagrant destroy"
-alias vr="vagrant reload"
-alias vst="vagrant status"
-alias vh="vagrant halt"
-
-# services
-alias donph="sudo service nginx start && sudo service mysql start && sudo service php5-fpm start"
-alias dofph="sudo service nginx stop && sudo service mysql stop && sudo service php5-fpm stop"
-alias donpy="sudo service postgresql start && sudo service redis-server start"
-alias dofpy="sudo service postgresql stop && sudo service redis-server stop"
-alias nginx_re="sudo service nginx restart"
-
-# mysql
-alias mysql_create_db='function _mysql_cdb(){ echo "CREATE SCHEMA $1 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql -u root -p; };_mysql_cdb'
 
 # openssl
 alias ssh_key="ssh-keygen -t rsa -b 8192"
@@ -163,30 +83,3 @@ alias ssl_cert="openssl x509 -sha256 -req -days 3000 -in domain.csr -signkey key
 function ssl_validity() {
     echo | openssl s_client -servername $1 -connect $1:443 2>/dev/null | openssl x509 -noout -dates
 }
-
-# android development
-PATH_ADB="$HOME/Android/Sdk/platform-tools"
-alias adb_start_server="sudo $PATH_ADB/adb start-server"
-alias adb_stop_server="sudo $PATH_ADB/adb kill-server"
-alias adb_list="$PATH_ADB/adb devices -l"
-
-# Wordpress
-alias wp_i18n_theme="php $HOME/projects/wordpress-core/tools/i18n/makepot.php wp-theme"
-
-# other stuff
-alias copy_dvd_regionfree="vobcopy -v -m -F 16 /media/cdrom1"
-alias remove_brackets="rename -v 's/\((.*)\)(.*)/$1$2/'"
-alias clam_scan="clamscan / -ir --exclude-dir=^/sys --exclude-dir=^/dev --exclude-dir=^/proc --detect-pua=yes --scan-mail=yes --log=$HOME/clamscan.log"
-alias flac_replaygain="metaflac --add-replay-gain *.flac"
-alias flac_cover_art="metaflac --import-picture-from"
-
-function remove_trailing_whitespace() {
-    echo -n `cat $1` > $1
-}
-function unseal() {
-    docker run --rm -v $(pwd):/app  vault unseal $1
-}
-function seal() {
-    docker run --rm -v $(pwd):/app  vault seal $1
-}
-alias swag="cd $SWAGGER_EDITOR_PATH && http-server -s -p 9999"
