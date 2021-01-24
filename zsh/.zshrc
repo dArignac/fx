@@ -44,3 +44,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # GPG
 GPG_TTY=$(tty)
 export GPG_TTY
+
+# volta.sh
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
