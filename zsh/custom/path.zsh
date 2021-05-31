@@ -19,5 +19,7 @@ PATH_ZSH=$PATH_ZSH:$HOME/.local/bin
 PATH_ZSH=$PATH_ZSH:$HOME/projects/github/flutter/bin
 # doctoolchain
 PATH_ZSH=$PATH_ZSH:$HOME/projects/github/docToolchain/bin
+# maven
+PATH_ZSH=$PATH_ZSH:$HOME/apache-maven/bin
 # set the PATH variable
 export PATH=$PATH:$PATH_ZSH
