@@ -23,5 +23,7 @@ PATH_ZSH=$PATH_ZSH:$HOME/projects/github/docToolchain/bin
 PATH_ZSH=$PATH_ZSH:$HOME/apache-maven/bin
 # azure functions (only for Ubuntu 21.04 as there is no package)
 [ -s "$HOME/azure-functions-cli/func" ] && PATH_ZSH=$PATH_ZSH:$HOME/azure-functions-cli
+# cuda
+PATH_ZSH=$PATH_ZSH:/usr/local/cuda/bin
 # set the PATH variable
 export PATH=$PATH:$PATH_ZSH
