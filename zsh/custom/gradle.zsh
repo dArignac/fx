@@ -1,4 +1,5 @@
 alias gwr="./gradlew run"
 alias gwb="./gradlew build"
+alias gwt="./gradlew test"
 alias gwcd="./gradlew composeDown"
 alias gwcu="./gradlew composeUp"
