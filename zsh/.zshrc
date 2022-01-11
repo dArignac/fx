@@ -12,6 +12,7 @@ zstyle ':completion:*' special-dirs true
 
 plugins=(
   git
+  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -31,6 +32,11 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # phpbrew php manager
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
