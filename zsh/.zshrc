@@ -29,7 +29,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # jabba java manager
 [ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh"
-jabba alias default $JABBA_JAVA_VERSION
+jabba use $JABBA_JAVA_VERSION
 
 # phpbrew php manager
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
