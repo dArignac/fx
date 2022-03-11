@@ -2,4 +2,4 @@
 # still private files (z_private_*) can come afterwards
 
 # set the var with the java version for jabba
-export JAVA_JABBA_VERSION="openjdk@1.16.0"
+export JABBA_JAVA_VERSION="openjdk@1.16.0"
