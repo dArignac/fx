@@ -12,7 +12,6 @@ zstyle ':completion:*' special-dirs true
 
 plugins=(
   git
-  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
