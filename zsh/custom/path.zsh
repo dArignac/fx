@@ -24,7 +24,7 @@
 [ -d "$HOME/.local/bin" ] && PATH_ZSH=$PATH_ZSH:$HOME/.local/bin
 
 # flutter
-[ -d "$HOME/projects/github/flutter/bin" ] && PATH_ZSH=$PATH_ZSH:$HOME/projects/github/flutter/bin
+[ -d "$HOME/.pub-cache/bin" ] && PATH_ZSH=$PATH_ZSH:$HOME/.pub-cache/bin
 
 # doctoolchain
 [ -d "$HOME/projects/github/docToolchain/bin" ] && PATH_ZSH=$PATH_ZSH:$HOME/projects/github/docToolchain/bin
