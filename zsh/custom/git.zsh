@@ -37,4 +37,5 @@ function git_retag() {
 function git_remove_all_tags() {
     git tag | xargs git push origin --delete && git tag | xargs git tag -d
 }
-alias git_email="git config --local user.email 106409+dArignac@users.noreply.github.com"
+alias git_credentials_cache_on="git config --global credential.helper 'cache --timeout=86400'"
+alias git_credentials_cache_off="git config --global --unset credential.helper"
