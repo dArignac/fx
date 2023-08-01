@@ -12,6 +12,7 @@ zstyle ':completion:*' special-dirs true
 
 plugins=(
   git
+  pdm
 )
 
 source $ZSH/oh-my-zsh.sh
