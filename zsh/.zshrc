@@ -9,10 +9,11 @@ export LC_ALL="en_US.UTF-8"
 #export LANG="de_DE.UTF-8"
 
 zstyle ':completion:*' special-dirs true
+zstyle ':omz:plugins:nvm' autoload true
 
 plugins=(
   git
-  pdm
+  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
