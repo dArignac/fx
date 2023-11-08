@@ -39,3 +39,6 @@ function git_remove_all_tags() {
 }
 alias git_credentials_cache_on="git config --global credential.helper cache && git config --global credential.helper 'cache --timeout=86400'"
 alias git_credentials_cache_off="git config --global --unset credential.helper"
+function git_branch_delete() {
+    git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done
+}
