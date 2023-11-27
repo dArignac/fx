@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-export ZSH_THEME="intika"
+export ZSH_THEME="awesomepanda"
 export ZSH_CUSTOM=$HOME/.fx/zsh/custom
 export EDITOR='vim'
 
