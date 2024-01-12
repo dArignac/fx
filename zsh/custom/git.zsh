@@ -45,3 +45,4 @@ function git_branch_delete() {
 function git_commit_show_affected_files() {
     git show --pretty="" --name-only $1
 }
+alias git_last_commit_show_affected_files="git log -n 1 --pretty-format='%H' | cat | git show --pretty='' --name-only"
