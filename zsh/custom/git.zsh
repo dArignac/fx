@@ -24,6 +24,11 @@ function g2d() {
     git remote prune origin
     git branch -d $1
 }
+function g2m() {
+    git checkout main
+    git pull
+    git remote prune origin
+}
 function gsw() {
     git checkout $1
     git pull origin $1
