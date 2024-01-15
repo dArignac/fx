@@ -18,6 +18,11 @@ alias git_remove_executable="git update-index --chmod=-x "
 alias git_add_executable="git update-index --chmod=+x "
 alias git_fix_local_file_mode_on_windows="git config --local core.filemode false"
 alias git_graph="git log --graph --decorate --pretty=oneline --abbrev-commit"
+function gacp() {
+    git add .
+    git commit -S -m $1
+    git push
+}
 function g2d() {
     git checkout develop
     git pull origin develop
