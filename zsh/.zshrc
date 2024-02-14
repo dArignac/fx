@@ -28,9 +28,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # added by travis gem
 [ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
 
-# jabba java manager
-[ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh" && jabba use $JABBA_JAVA_VERSION
-
 # phpbrew php manager
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
