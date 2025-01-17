@@ -40,6 +40,8 @@ export NVM_DIR="$HOME/.nvm"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+export PATH="$PATH:$HOME/.local/bin"
+
 # GPG
 GPG_TTY=$(tty)
 export GPG_TTY
